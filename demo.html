@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- api gateway generated sdk -->
+    <script src="./assets/js/sdk/lib/axios/dist/axios.standalone.js"></script>
+    <script src="./assets/js/sdk/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+    <script src="./assets/js/sdk/lib/CryptoJS/rollups/sha256.js"></script>
+    <script src="./assets/js/sdk/lib/CryptoJS/components/hmac.js"></script>
+    <script src="./assets/js/sdk/lib/CryptoJS/components/enc-base64.js"></script>
+    <script src="./assets/js/sdk/lib/url-template/url-template.js"></script>
+    <script src="./assets/js/sdk/lib/apiGatewayCore/sigV4Client.js"></script>
+    <script src="./assets/js/sdk/lib/apiGatewayCore/apiGatewayClient.js"></script>
+    <script src="./assets/js/sdk/lib/apiGatewayCore/simpleHttpClient.js"></script>
+    <script src="./assets/js/sdk/lib/apiGatewayCore/utils.js"></script>
+
+    <script src="./assets/js/sdk/apigClient.js"></script>
+
+   
+	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.809.0.min.js"></script>
+
+
+</head>
+
+<body>
+    <div>
+        <form action="javascript:void(0);">
+            <input id="input" type="text" placeholder="What's up?" />
+            <button id="record">record</button>
+	    <button id="queryImage">query</button>
+	    <input id="inputFile" type="file"/> 
+        </form>
+    </div>
+    <div>
+        <p id="imgHolder"></p>
+    </div>
+
+
+    <script>
+
+      var sdk = apigClientFactory.newClient({});
+
+    </script>
+</body>
+
+</html>
